@@ -1,0 +1,252 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("afb/achtergrond.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.menu button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-content,
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+}
+
+.menu-content a,
+.dropdown a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-content a:hover,
+.dropdown a:hover {
+    background-color: lightgray;
+}
+
+
+.menu:hover .menu-content,
+.menu:hover .dropdown {
+    display: block;
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+}
+
+
+.header {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.header img {
+    width: 300px;
+}
+
+.header h1 {
+    margin-top: 20px;
+}
+
+
+.timeline {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.lijn {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+.event {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.boven .content {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.onder .content {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 22%;
+    min-width: 200px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.middle {
+    width: 40%;
+    text-align: center;
+}
+
+.middle img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right {
+    width: 40%;
+    font-size: 18px;
+}
+
+
+.formulier {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    margin: auto;
+}
+
+.formulier input,
+.formulier textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulier button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulier button:hover {
+    background-color: #333;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
+}
+.special-players {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    background-color: rgba(0,0,0,0.5); 
+	
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10; ]/
+}
+
+.special-players ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.special-players li {
+    margin-bottom: 5px;
+}body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+footer {
+    background-color: rgba(0,0,0,0.6); 
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
